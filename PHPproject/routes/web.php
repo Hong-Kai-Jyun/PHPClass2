@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('think');
 });
 //增加下列一行
 Route::resource('cars','CarsController');
+//加入下列這一行，其它行不要刪掉
+Route::get('hello','Hello\DemoController@index');
