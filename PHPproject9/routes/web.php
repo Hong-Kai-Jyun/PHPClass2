@@ -14,3 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//增加下列一行
+Route::resource('cars','CarsController');
